@@ -26,6 +26,6 @@
 
 | Lab | Link |
 | :--- | :--- |
-| Lab 1 | [lab1/](./lab1/) |
-| Lab 2 | [lab2/](./lab2/) |
-| Lab 3 | [lab3/](./lab3/) |
+| Lab 1 | [lab-1/](./lab-1/) |
+| Lab 2 | [lab-2/](./lab-2/) |
+| Lab 3 | [lab-3/](./lab-3/) |
