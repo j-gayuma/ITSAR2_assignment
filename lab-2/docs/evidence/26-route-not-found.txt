@@ -1,0 +1,44 @@
+=== Route Not Found - 404 (All Services) ===
+$ curl -i http://localhost:8001/api/nonexistent
+
+HTTP/1.1 404 Not Found
+Host: localhost:8001
+Date: Fri, 13 Mar 2026 04:29:09 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"ROUTE_NOT_FOUND","message":"The requested route was not found","method":"GET","uri":"\/api\/nonexistent"}
+
+
+$ curl -i http://localhost:8002/api/nonexistent
+
+HTTP/1.1 404 Not Found
+Host: localhost:8002
+Date: Fri, 13 Mar 2026 04:29:09 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"ROUTE_NOT_FOUND","message":"The requested route was not found","method":"GET","uri":"\/api\/nonexistent"}
+
+
+$ curl -i http://localhost:8003/api/nonexistent
+
+HTTP/1.1 404 Not Found
+Host: localhost:8003
+Date: Fri, 13 Mar 2026 04:29:09 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"ROUTE_NOT_FOUND","message":"The requested route was not found","method":"GET","uri":"\/api\/nonexistent"}

@@ -1,0 +1,14 @@
+=== Create Enrollment - 201 Created ===
+$ curl -i -X POST http://localhost:8003/api/enrollments -H "Content-Type: application/json" -d '{"student_id":2,"course_id":2}'
+
+HTTP/1.1 201 Created
+Host: localhost:8003
+Date: Fri, 13 Mar 2026 04:28:40 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"id":2,"student_id":2,"course_id":2,"status":"ENROLLED","created_at":"2026-03-13 04:28:40","updated_at":"2026-03-13 04:28:40","student":{"id":2,"student_number":"STU-00002","name":"Test Student","email":"test_evidence@example.com","phone":"09171234567","address":null,"date_of_birth":null,"year_level":2,"program":"BSCS","status":"ACTIVE","created_at":"2026-03-13 04:26:30","updated_at":"2026-03-13 04:26:30"},"course":{"id":2,"name":"Test Course","code":"TEST101","description":"A test course","units":3,"schedule_day":null,"schedule_time":null,"room":null,"created_at":"2026-03-13 04:26:58","updated_at":"2026-03-13 04:26:58","prerequisites":[],"required_by":[]}}

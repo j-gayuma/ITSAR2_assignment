@@ -1,0 +1,1 @@
+=== TEST 1: GET /products — Retrieve All Products === echo  echo $ curl http://localhost:3000/products echo  curl -s http://localhost:3000/products

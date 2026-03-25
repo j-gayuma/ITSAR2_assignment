@@ -1,0 +1,15 @@
+=== Create Enrollment - 503 Service Unavailable (Student Service Down) ===
+# Student Service (port 8001) has been stopped to simulate service unavailability
+$ curl -i -X POST http://localhost:8003/api/enrollments -H "Content-Type: application/json" -d '{"student_id":1,"course_id":1}'
+
+HTTP/1.1 503 Service Unavailable
+Host: localhost:8003
+Date: Fri, 13 Mar 2026 04:29:57 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"SERVICE_UNAVAILABLE","message":"Student Service is currently unavailable"}

@@ -1,0 +1,14 @@
+=== Record Attendance - 400 Bad Request (Invalid Date) ===
+$ curl -i -X POST http://localhost:8003/api/attendance -H "Content-Type: application/json" -d '{"course_id":1,"date":"not-a-date","records":[{"enrollment_id":1,"status":"PRESENT"}]}'
+
+HTTP/1.1 400 Bad Request
+Host: localhost:8003
+Date: Fri, 13 Mar 2026 04:29:09 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"VALIDATION_ERROR","message":"Invalid date format. Use YYYY-MM-DD"}

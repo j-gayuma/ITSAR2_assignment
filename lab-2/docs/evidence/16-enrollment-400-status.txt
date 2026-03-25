@@ -1,0 +1,14 @@
+=== Update Enrollment - 400 Bad Request (Invalid Status) ===
+$ curl -i -X PUT http://localhost:8003/api/enrollments/1 -H "Content-Type: application/json" -d '{"status":"INVALID_STATUS"}'
+
+HTTP/1.1 400 Bad Request
+Host: localhost:8003
+Date: Fri, 13 Mar 2026 04:28:40 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"VALIDATION_ERROR","message":"Invalid status. Must be one of: ENROLLED, DROPPED, COMPLETED"}

@@ -1,0 +1,14 @@
+=== Create Course - 400 Bad Request (Missing Fields) ===
+$ curl -i -X POST http://localhost:8002/api/courses -H "Content-Type: application/json" -d '{}'
+
+HTTP/1.1 400 Bad Request
+Host: localhost:8002
+Date: Fri, 13 Mar 2026 04:26:58 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"VALIDATION_ERROR","message":"Name and code are required"}

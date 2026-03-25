@@ -1,0 +1,14 @@
+=== Create Student - 409 Duplicate Email ===
+$ curl -i -X POST http://localhost:8001/api/students -H "Content-Type: application/json" -d '{"name":"Duplicate","email":"test_evidence@example.com"}'
+
+HTTP/1.1 409 Conflict
+Host: localhost:8001
+Date: Fri, 13 Mar 2026 04:26:31 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"DUPLICATE_EMAIL","message":"A student with this email already exists"}

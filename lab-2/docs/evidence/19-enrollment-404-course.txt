@@ -1,0 +1,14 @@
+=== Create Enrollment - 404 Course Not Found ===
+$ curl -i -X POST http://localhost:8003/api/enrollments -H "Content-Type: application/json" -d '{"student_id":2,"course_id":9999}'
+
+HTTP/1.1 404 Not Found
+Host: localhost:8003
+Date: Fri, 13 Mar 2026 04:28:40 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"error":"COURSE_NOT_FOUND","message":"Course with ID 9999 not found"}

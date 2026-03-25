@@ -1,0 +1,14 @@
+=== Enrollment Service Health Check ===
+$ curl -i http://localhost:8003/api/health
+
+HTTP/1.1 200 OK
+Host: localhost:8003
+Date: Fri, 13 Mar 2026 04:28:40 GMT
+Connection: close
+X-Powered-By: PHP/8.4.0
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Accept
+
+{"service":"Enrollment Service","status":"running","port":8003,"database":"enrollment_service.sqlite","depends_on":{"Student Service":"http:\/\/localhost:8001","Course Service":"http:\/\/localhost:8002"}}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 999.99,
+    "stock": 4,
+    "category": "Prebuilt PC",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Mouse",
+    "price": 29.99,
+    "stock": 49,
+    "category": "Peripheral",
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600"
+  },
+  {
+    "id": 3,
+    "name": "Mechanical Keyboard",
+    "price": 59.99,
+    "stock": 0,
+    "category": "Peripheral",
+    "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600"
+  },
+  {
+    "id": 4,
+    "name": "27\" Gaming Monitor",
+    "price": 399.99,
+    "stock": 0,
+    "category": "Monitor",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600"
+  },
+  {
+    "id": 5,
+    "name": "Gaming Headset",
+    "price": 79.99,
+    "stock": 20,
+    "category": "Peripheral",
+    "image": "https://images.unsplash.com/photo-1599669454699-248893623440?w=600"
+  }
+]
